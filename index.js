@@ -1,7 +1,8 @@
 
 function injectEnv(key, value) {
-  if (typeof(value) == 'string' && value.match(/^\$/)) {
-    return process.env[value.replace('$', '')]
+  var dollar = new RegExp(/^\$/)
+  if (typeof(value) == 'string' && value.match(dollar)) {
+    return process.env[value.replace(dollar, '')]
   }
   return value
 }
