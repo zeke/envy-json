@@ -1,4 +1,4 @@
-# ENVy JSON
+# ENVy JSON [![Build Status](https://travis-ci.org/zeke/envy-json.png?branch=master)](https://travis-ci.org/zeke/envy-json)
 
 > Read a javascript object, JSON string, or JSON file and replace values like '$foo' with process.env.foo
 
